@@ -2,10 +2,14 @@ require 'pry'
 
 def hello(array)
   i = 0
+  collection = []
   while i < array.length
-    yield(array[i])
+    #binding_pry
+    collection << yield(array[i])
     i += 1
   end
+  collection
+#binding_pry
 end
 
 
